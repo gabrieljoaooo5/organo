@@ -14,6 +14,10 @@ const Form = (props) => {
     const toSave = (event) => {
         event.preventDefault()
         props.addEmployee({name, role, image, team})
+        setName('')
+        setRole('')
+        setImage('')
+        setTeam('')
     }
 
     return (
